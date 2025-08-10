@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Outlaw Freelancing — V2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #fbf7f2;
+      --card: #fff6ef;
+      --accent: #c57a2b;
+      --dark: #3a2f28;
+      --muted: #8d6b53;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;background:linear-gradient(180deg,var(--bg),#fff);color:var(--dark)}
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+    .nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--dark),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-family:'Merriweather',serif;font-size:20px;box-shadow:0 6px 18px rgba(197,122,43,0.12)}
+    h1{font-family:'Merriweather',serif;margin:0;font-size:28px;color:var(--dark)}
+    .tag{color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-bottom:28px}
+    .card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 20px rgba(58,47,40,0.06)}
+    .lead{font-size:18px;line-height:1.6;color:var(--dark)}
+    .cta{display:inline-block;margin-top:14px;padding:10px 16px;border-radius:10px;background:var(--dark);color:#fff;text-decoration:none;font-weight:600}
+    .services{display:flex;gap:16px;margin-top:18px}
+    .service{flex:1;padding:14px;border-radius:10px;background:#fff;border:1px solid rgba(58,47,40,0.04)}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+    .portfolio .item{padding:16px;border-radius:10px;background:#fff;border-left:4px solid var(--accent)}
+    .muted{color:var(--muted);font-size:14px}
+    .testimonials{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    blockquote{margin:0;padding:12px;background:#fff;border-left:4px solid var(--dark);border-radius:8px;font-style:italic}
+    footer{margin-top:34px;text-align:center;color:var(--muted);font-size:14px;padding:20px 0}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.testimonials{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">OF</div>
+        <div>
+          <h1>Outlaw Freelancing</h1>
+          <div class="tag">Rebel content. Reliable results.</div>
+        </div>
+      </div>
+      <div class="muted">⟡ Content, SEO, Brand Story</div>
+    </nav>
+
+    
+
+    <section class="card portfolio">
+      <h3 style="margin-top:0">Selected Projects</h3>
+      <div class="grid">
+        <div class="item">
+          <h4 style="margin:0 0 6px 0">1. RidgeLine Coffee — Brand Launch Content</h4>
+          <div class="muted">Industry: Food & Beverage</div>
+          <p style="margin-top:8px">Created launch copy, product pages, and a 6-part email sequence. The campaign sold out the first 48 hours.</p>
+          <div class="muted" style="margin-top:8px">Result: 12k+ launch orders; 18% email conversion</div>
+        </div>
+
+        <div class="item">
+          <h4 style="margin:0 0 6px 0">2. HarborTech — Technical Blog Pillar</h4>
+          <div class="muted">Industry: Cybersecurity</div>
+          <p style="margin-top:8px">Developed a research-backed pillar post (3,500 words) that ranked for 15 long-tail keywords.</p>
+          <div class="muted" style="margin-top:8px">Result: +240% organic sessions in 4 months</div>
+        </div>
+
+        <div class="item">
+          <h4 style="margin:0 0 6px 0">3. Ember Homes — Case Study Series</h4>
+          <div class="muted">Industry: Real Estate Tech</div>
+          <p style="margin-top:8px">Wrote three deep-dive case studies used by sales to close enterprise deals.</p>
+          <div class="muted" style="margin-top:8px">Result: Helped close $420k in pipeline value</div>
+        </div>
+
+        <div class="item">
+          <h4 style="margin:0 0 6px 0">4. Nomad Trails — Travel Guide Content</h4>
+          <div class="muted">Industry: Travel & Leisure</div>
+          <p style="margin-top:8px">Produced SEO-rich city guides and micro-content for social channels.</p>
+          <div class="muted" style="margin-top:8px">Result: 300% increase in newsletter signups</div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px">
+        <h4 style="margin-bottom:8px">Client Reviews</h4>
+        <div class="testimonials">
+          <blockquote>“They didn’t just meet my deadline—they rode in early, dropped off gold-standard copy, and rode out without a fuss.”<br><strong>— J. Morales, Startup Founder</strong></blockquote>
+          <blockquote>“Sharp, witty, and exactly what my audience needed. I’m keeping Outlaw Freelancing on speed dial.”<br><strong>— K. Hart, Marketing Director</strong></blockquote>
+          <blockquote>“They took my messy notes and turned them into a story that could win awards. And probably will.”<br><strong>— M. Chen, Nonprofit Coordinator</strong></blockquote>
+          <blockquote>“Practical, punctual, and with a voice that sells. The conversion lift speaks for itself.”<br><strong>— L. O’Connor, eCommerce Lead</strong></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3 style="margin-top:0">Achievements & Wins</h3>
+      <ul style="margin-top:8px">
+        <li>Featured in <em>Content Mavericks</em> 2024 — “Top 50 Freelancers to Watch”</li>
+        <li>Ghostwrote a blog series that drove <strong>200% audience growth in 3 months</strong></li>
+        <li>Developed video ad scripts that reached <strong>2M+ views</strong> in week one</li>
+        <li>Built repeat retainer relationships with 15+ clients</li>
+      </ul>
+    </section>
+
+    <section class="card" style="text-align:center">
+      <h3 style="margin-top:0">Ready to Break the Rules?</h3>
+      <p style="margin:6px 0 12px 0">If you want content that’s equal parts strategy and swagger, let’s talk.</p>
+      <a class="cta" href="mailto:contact@outlawfreelancing.com">contact@outlawfreelancing.com</a>
+    </section>
+
+    <footer>&copy; 2025 Outlaw Freelancing — All rights reserved.</footer>
+  </div>
+</body>
+</html>
